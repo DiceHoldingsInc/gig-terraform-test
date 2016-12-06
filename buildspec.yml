@@ -1,16 +1,7 @@
 version: 0.1
 
 phases:
-  install:
-    commands:
-      - echo installing
-  pre_build:
-    commands:
-      - echo Nothing to do in the pre_build phase...
   build:
     commands:
       - echo Build started on `date`
       - terraform plan
-  post_build:
-    commands:
-      - echo Build completed on `date`
